@@ -40,6 +40,7 @@ func Provider() terraform.ResourceProvider {
 			"fusionauth_form":                 resourceForm(),
 			"fusionauth_idp_apple":            resourceIDPApple(),
 			"fusionauth_imported_key":         resourceImportedKey(),
+			"fusionauth_idp_external_jwt":     resourceIDPExternalJWT(),
 		},
 		DataSourcesMap: map[string]*schema.Resource{
 			"fusionauth_application":      dataSourceApplication(),
